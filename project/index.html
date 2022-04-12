@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>  
+    <header>
+        <h1 class="header">Введіть назву та виберіть тип вулиці</h1>
+    </header>
+    <div class="container">
+        <select name="streettype" id="streettype">
+        <option value="вулиця">Вулиця</option>
+        <option value="провулок">Провулок</option>
+        <input id = 'input' type="text">
+        </select>
+    </div>
+    <div class="container">
+        <button id="submit" class="submit">Шукати!</button>
+    </div>
+    <div class="container container_last">
+        <h2 class="output animate__animated" id="output">Натисніть кнопку!</h2>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
