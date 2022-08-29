@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { useEffect, useState } from 'react';
+import { nanoid } from 'nanoid';
 import './App.scss';
 
 export const App = () => {
@@ -26,7 +27,7 @@ export const App = () => {
           ? (
             <>
               {sortedRepos.map(repo => (
-                <li>
+                <li key={nanoid()}>
                   <a href={`https://lentyaeev.github.io/${repo.name}`}>{repo.name}</a>
                 </li>
               ))}
