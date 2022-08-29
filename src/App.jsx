@@ -12,7 +12,6 @@ export const App = () => {
 
   useEffect(() => {
     getRepos().then(response => response.json())
-      .catch((er) => console.log(er))
       .then(response => setRepos(response));
   }, []);
 
