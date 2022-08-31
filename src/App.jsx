@@ -38,11 +38,23 @@ export const App = () => {
             <>
               {sortedRepos.map(repo => (
                 <li key={nanoid()}>
-                  <a href={`https://lentyaeev.github.io/${repo.name}`}>{repo.name}</a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`https://lentyaeev.github.io/${repo.name}`}
+                  >
+                    {repo.name}
+                  </a>
                   {showGhLink && (
                     <>
                       {' | '}
-                      <a href={repo.html_url}>LINK</a>
+                      <a
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        LINK
+                      </a>
                     </>
                   )}
                 </li>
